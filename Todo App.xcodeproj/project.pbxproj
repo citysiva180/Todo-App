@@ -14,6 +14,7 @@
 		D857AE2B2B9562730025833A /* Todo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857AE2A2B9562730025833A /* Todo_AppTests.swift */; };
 		D857AE352B9562730025833A /* Todo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857AE342B9562730025833A /* Todo_AppUITests.swift */; };
 		D857AE372B9562730025833A /* Todo_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857AE362B9562730025833A /* Todo_AppUITestsLaunchTests.swift */; };
+		D857AE442B961E160025833A /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857AE432B961E160025833A /* AddTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D857AE302B9562730025833A /* Todo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Todo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D857AE342B9562730025833A /* Todo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_AppUITests.swift; sourceTree = "<group>"; };
 		D857AE362B9562730025833A /* Todo_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D857AE432B961E160025833A /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				D857AE192B9562720025833A /* Todo_AppApp.swift */,
 				D857AE1B2B9562720025833A /* ContentView.swift */,
+				D857AE432B961E160025833A /* AddTodoView.swift */,
 				D857AE1D2B9562730025833A /* Assets.xcassets */,
 				D857AE1F2B9562730025833A /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				D857AE1C2B9562720025833A /* ContentView.swift in Sources */,
 				D857AE1A2B9562720025833A /* Todo_AppApp.swift in Sources */,
+				D857AE442B961E160025833A /* AddTodoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
