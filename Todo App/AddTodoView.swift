@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddTodoView: View {
-    
+    //Code completed!
     @State private var task = "" // State is within this component Wherease observable object is for other objects
     @ObservedObject var todoList:TodoList // Remember how we declared the observable Object. Now the changes in the observable object become observed object in this view. Hence this variable will take care of it!
     @State private var displayText = "What would you like to add?"
