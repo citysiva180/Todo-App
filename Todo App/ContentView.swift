@@ -20,13 +20,18 @@ struct ContentView: View {
                         todo in HStack{
                             Text(todo.task)
                             Spacer()
+                            Image(systemName: "trash") // On adding the function, you need to assign a button to it, which this part of the code does.
+                                .foregroundColor(.red)
+                                .onTapGesture {
+                                    todoList.deleteTodo(todo: todo) // From the same class instance, you get the Todo delete function. The important part is you remembering the syntaxes. The only way you get to do this is when you develop multiple apps with it!
+                                }
                         }
                     }
                 }
             }.navigationTitle("Todo")
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
-                        Button {
+                        Button { // The button here, uses the toggle function and class attribute todoList
                             todoList.showAddTodoView.toggle()
                         }label: {
                             Text("Add Todo")
@@ -61,7 +66,7 @@ class TodoList: ObservableObject{
         todos.append(Todo(task:task))
     }
     // Function to delete Todo Values
-    func deleteTodo(todo:Todo){
+    func deleteTodo(todo:Todo){ // Explnation of code... Get the index of the element to be removed, then use the todos.remove inbuilt function to remove that element from the struct. Totally cool right??
         if let index = todos.firstIndex(of: todo){
             todos.remove(at: index)
         }
